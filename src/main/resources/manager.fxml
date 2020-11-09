@@ -3,10 +3,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Text?>
 <VBox alignment="TOP_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
       fx:controller="org.example.Controller">
-    <HBox>
-        <Button maxWidth="80" text="GET" HBox.hgrow="ALWAYS" onAction="#btnGET"/>
-    </HBox>
-    <TextField fx:id="pathField" editable="false" focusTraversable="false"/>
+
+    <VBox>
+        <Text>"Введите ФИО пациента"</Text>
+        <TextField fx:id="lastname" editable="true" promptText="Фамилия" focusTraversable="false"/>
+        <TextField fx:id="firstname" editable="true" promptText="Имя" focusTraversable="false"/>
+        <TextField fx:id="middlename" editable="true" promptText="Отчество" focusTraversable="false"/>
+    </VBox>
+    <Button maxWidth="80" text="GET" HBox.hgrow="ALWAYS" onAction="#btnGET"/>
+    <TextField fx:id="result" editable="false" focusTraversable="false"/>
+    <VBox>
+        <Text>"Ниже отображается id клиента"</Text>
+        <TextField fx:id="clientId" editable="false" focusTraversable="false"/>
+    </VBox>
+
 </VBox>

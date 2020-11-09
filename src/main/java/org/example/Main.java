@@ -11,7 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/manager.fxml"));
-        primaryStage.setScene(new Scene(root, 1000, 300));
+        primaryStage.setTitle("Поиск пациента по ФИО");
+        primaryStage.setScene(new Scene(root, 600, 200));
         primaryStage.show();
     }
 
