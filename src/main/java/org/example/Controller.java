@@ -15,8 +15,6 @@ import java.net.URL;
 
 public class Controller {
 
-    private final String GET_URL = "http://127.0.0.1:8080/api/demo/patients/searchone?lastname=10&firstname=10&middlename=10";
-
     @FXML
     TextField lastname;
     @FXML
@@ -49,10 +47,6 @@ public class Controller {
         }
         String id = String.valueOf(patient.getId());
         clientId.setText(id);
-
-
-
     }
-
 
 }

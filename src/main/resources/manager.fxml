@@ -14,7 +14,10 @@
         <TextField fx:id="middlename" editable="true" promptText="Отчество" focusTraversable="false"/>
     </VBox>
     <Button maxWidth="80" text="GET" HBox.hgrow="ALWAYS" onAction="#btnGET"/>
+    <VBox>
+        <Text>"Ниже отображается Json responce"</Text>
     <TextField fx:id="result" editable="false" focusTraversable="false"/>
+    </VBox>
     <VBox>
         <Text>"Ниже отображается id клиента"</Text>
         <TextField fx:id="clientId" editable="false" focusTraversable="false"/>
